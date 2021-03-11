@@ -40,9 +40,8 @@ namespace TestTariffaConveniente
         public void TestTariffaConveniente1()
         {
             int ore = 2;
-            string risposta = "";
-            string risultato_effettivo = Gestione.TariffaConveniente(ore, tariffa);
-            string risultato_aspettato = "TariffaC";
+            string risultato_effettivo = Gestione.TariffaConveniente(ore);
+            string risultato_aspettato = "TariffaB";
             Assert.AreEqual(risultato_aspettato, risultato_effettivo);
         }
 
@@ -50,8 +49,7 @@ namespace TestTariffaConveniente
         public void TestTariffaConveniente2()
         {
             int ore = 24;
-            string risposta = "";
-            string risultato_effettivo = Gestione.TariffaConveniente(ore, tariffa);
+            string risultato_effettivo = Gestione.TariffaConveniente(ore);
             string risultato_aspettato = "TariffaA";
             Assert.AreEqual(risultato_aspettato, risultato_effettivo);
         }

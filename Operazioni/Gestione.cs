@@ -25,5 +25,23 @@ namespace Operazioni
             return costoTotale;
         }
 
+        public static string TariffaConveniente(int ore)
+        {
+            string risposta = "";
+            if (ore == 24)
+            {
+                risposta = "TariffaA";
+
+            }
+            else if (ore == 1)
+            {
+                risposta = "TariffaC";
+            }
+            else if (ore > 1)
+            {
+                risposta = "TariffaB";
+            }
+            return risposta;
+        }
     }
 }
